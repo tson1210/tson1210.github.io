@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web cơ bản 1</title>
+    <style>
+        body{
+            font-family: Arial;
+            margin: 0px;
+        }
+        #header{
+            background-color: #39e4c2;
+            padding: 10px;
+            text-align: center;
+        }
+        #header p:first-child{
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        ul#menu{
+            background-color: black;
+            margin: 0px;padding: 0px;
+        }
+        ul#menu::after{
+            display: block;
+            content: "";
+            clear: both;
+        }
+        ul#menu li{
+            float: left;
+            list-style-type: none;
+        }
+        ul#menu li a{
+            display: inline-block;
+            text-decoration-line: none;
+            padding: 12px 20px;
+            color: white;
+        }
+        ul#menu li a:hover{
+            background-color: #ddd;
+            color: black;           
+        }
+        #main::after{
+            display: block;
+            content: "";
+            clear: both;
+        }
+        #main #side{
+            box-sizing: border-box;
+            padding: 10px;
+            float: left;
+            width: 30%;    
+        }
+        #main #side img{width: 100%;}
+        #main #content{
+            box-sizing: border-box;
+            padding: 10px;
+            float: left;
+            width: 70%;
+        }
+        #main #content p:last-child{
+            text-align: right;
+        }
+        #footer{
+            background-color: #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <p>WEB CƠ BẢN</p>
+        <P>(giới thiệu sơ qua trang web)</P>
+    </div>
+    <ul id="menu">
+        <li><a href="">Link 1</a></li>
+        <li><a href="">Link 2</a></li>
+        <li><a href="">Link 3</a></li>
+        <li><a href="">Link 4</a></li>
+    </ul>
+    <div id="main">
+        <div id="side">
+            <p>Thông tin tác giả</p>
+            <p>- Họ tên:....</p>
+            <p>- Ngày sinh:....</p>
+            <p>- Giới tính:....</p>
+            <p>- Địa chỉ:....</p>
+            <p><img src="../../Other/father.jpg"></p>
+        </div>
+        <div id="content">
+            <h2>Tiêu đề bài viết</h2>
+            <p>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+             . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+             . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+             . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+             . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+             . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+             . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+             . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+             . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+             . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+             . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+             . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+             . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+             . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+             . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+             . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+             . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+             . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+             . . . . . . . . . . . . . . . . . . .</p>
+            <p>Ngày đăng: 23/08/2021</p>
+        </div>
+    </div>
+    <p id="footer">Thông tin bản quyền</p>
+</body>
+</html>
